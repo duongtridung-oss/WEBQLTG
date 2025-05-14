@@ -52,7 +52,6 @@
 
 * ✅ Tạo, chỉnh sửa, xóa nhiệm vụ
 * ✅ Nhắc nhở thông minh theo thời gian hoặc mức độ ưu tiên
-* ✅ Theo dõi thời gian làm việc thực tế
 * ✅ Phân loại và ưu tiên nhiệm vụ
 * ✅ Xác thực và bảo mật người dùng bằng JWT
 
