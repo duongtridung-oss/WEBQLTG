@@ -8,6 +8,12 @@
 * 👩‍💻 **Lê Thị Cẩm Ly**
 * 🧑‍💻 **Hoàng Tuấn Bảo**
 
+---
+
+## 👨‍💻 Nhóm phát triển
+
+* **Tên nhóm**: Group5_LT7
+* **Liên hệ**: https://github.com/hongquan23
 
 ---
 
@@ -71,13 +77,6 @@
 * Giao diện kéo thả trực quan (drag & drop)
 * Tích hợp chia sẻ nhiệm vụ theo nhóm
 * Hỗ trợ đa nền tảng (web/mobile)
-
----
-
-## 👨‍💻 Nhóm phát triển
-
-* **Tên nhóm**: Group5_LT7
-* **Liên hệ**: https://github.com/hongquan23
 
 
 ---
