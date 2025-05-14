@@ -71,6 +71,13 @@
 
 * **Tên nhóm**: Group5_LT7
 * **Liên hệ**: https://github.com/hongquan23
+👥 Thành viên nhóm
+🧑‍💻 Lương Hồng Quân
 
+🧑‍💻 Hà Xuân Đại
+
+👩‍💻 Lê Thị Cẩm Ly
+
+🧑‍💻 Hoàng Tuấn Bảo
 ---
 
