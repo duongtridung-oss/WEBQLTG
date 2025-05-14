@@ -3,7 +3,7 @@
 ---
 
 
-## 👨‍💻 Nhóm phát triển:
+## 👨‍💻 Nhóm phát triển
 
 * **Tên nhóm**: Group5_LT7
 * **Liên hệ**: https://github.com/hongquan23
