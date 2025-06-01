@@ -1,4 +1,4 @@
-# **Báo cáo tuần 2 - Nhóm TimeManagement**
+# **Báo cáo tuần 2 - Nhóm K17_Group5**
 
 ## **1. Báo cáo nhóm**
 
@@ -6,7 +6,7 @@
 
 * Hoàn thiện chức năng đăng nhập, đăng ký
 * Thiết kế giao diện dashboard cơ bản
-* Bắt đầu xây dựng chức năng quản lý TimeManagement (thêm/sửa/xóa task)
+* Bắt đầu xây dựng chức năng quản lý TimeManagement (thêm task)
 * Tìm hiểu và áp dụng validate form trong các form nhập liệu
 * Sửa lỗi truyền dữ liệu giữa frontend và backend
 
@@ -19,7 +19,7 @@
 
 ### c. **Kế hoạch và mục tiêu tuần tới**
 
-* Hoàn thiện chức năng quản lý TimeManagement (thêm/sửa/xóa/lọc)
+* Hoàn thiện chức năng quản lý TimeManagement (sửa/xóa/lọc)
 * Cải tiến giao diện dashboard cho trực quan và dễ sử dụng hơn
 * Tối ưu code và tổ chức lại cấu trúc project
 * Thêm tính năng nhắc việc (notification/reminder) cơ bản
@@ -30,6 +30,6 @@
 ## **2. Đóng góp của từng thành viên**
 
 * **Hồng Quân**: Điều phối công việc nhóm, đảm bảo tiến độ thực hiện; tham gia lên kế hoạch tính năng quản lý thời gian; rà soát tính hợp lý của luồng thao tác trên hệ thống
-* **Tuấn Bảo**: Xây dựng phần backend cho chức năng thêm/sửa/xóa task; hỗ trợ sửa lỗi validate form
+* **Tuấn Bảo**: Xây dựng phần backend cho chức năng thêm task; hỗ trợ sửa lỗi validate form
 * **Cẩm Ly**: Thiết kế giao diện dashboard và phần hiển thị danh sách tasks
 * **Xuân Đại**: Tối ưu giao diện login/register; tích hợp frontend với backend cho các form nhập dữ liệu
