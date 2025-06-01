@@ -1,4 +1,4 @@
-# **Báo cáo tuần 2 - Nhóm K17_Group5**
+# **Báo cáo tuần 2 - Nhóm 5_KTPM-LT7**
 
 ## **1. Báo cáo nhóm**
 
