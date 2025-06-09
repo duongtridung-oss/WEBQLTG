@@ -53,11 +53,6 @@
 
 ## 🛠️ Công nghệ sử dụng
 
-| Thành phần   | Công nghệ                               | Mô tả                                                            |
-| ------------ | --------------------------------------- | ---------------------------------------------------------------- |
-| **Frontend** | HTML, CSS, Framework hỗ trợ (VD: React) | Xây dựng giao diện người dùng, xử lý tương tác                   |
-| **Backend**  | FastAPI (Python)                        | Xử lý RESTful API, quản lý nhiệm vụ, xác thực người dùng (JWT)   |
-| **Database** | MongoDB                                 | Lưu trữ dữ liệu dưới dạng tài liệu JSON, linh hoạt và dễ mở rộng |
 | Thành phần   | Công nghệ             | Mô tả                                                                 |
 | ------------ | --------------------- | --------------------------------------------------------------------- |
 | **Frontend** | HTML, CSS, JavaScript | Xây dựng giao diện người dùng, xử lý tương tác cơ bản                 |
