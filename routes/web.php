@@ -27,6 +27,8 @@ Route::middleware('auth')->group(function () {
     Route::get('tasks', [TaskController::class, 'index'])->name('tasks.index');
     Route::post('tasks', [TaskController::class, 'store'])->name('tasks.store');
     Route::post('/task-lists', [ListController::class, 'store'])->name('task-lists.store');
+    Route::resource('tasks', TaskController::class)->except(['show']);
+
 });
 
 
