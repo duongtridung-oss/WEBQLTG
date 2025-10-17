@@ -11,17 +11,17 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4">
-                    <a href="#"><img src="{{ ('frontend/images/calendar.png')}}" alt="logocld" class="iconheader calendar"></a>
-                    <a href="{{ route('tasks.index') }}"><img src="{{ ('frontend/images/to-do-list.png')}}" alt="logotdl" class="iconheader todolist"></a>
-                </div>
-                <div class="col-sm-4 d-flex align-items-center justify-content-center gap-2">
-                    <button id="btn-today" class="btn btn-outline-dark">Hôm nay</button>
-                    <button id="btn-prev" class="btn text-dark"><img src="{{ ('frontend/images/left-arrow.png')}}" alt=""></button>
-                    <button id="btn-next" class="btn text-dark"><img src="{{ ('frontend/images/right-arrow.png')}}" alt=""></button>
-                    <p class="month-year-display" id="monthYear"></p>
-                </div>  
-                <div class="col-sm-4 text-end dropdown">
+				<div class="col-sm-4">
+					<a href="#"><img src="{{ ('frontend/images/calendar.png')}}" alt="logocld" class="iconheader calendar"></a>
+					<a href="{{ route('tasks.index') }}"><img src="{{ ('frontend/images/to-do-list.png')}}" alt="logotdl" class="iconheader todolist"></a>
+				</div>
+				<div class="col-sm-4 d-flex align-items-center justify-content-center gap-2">
+					<button id="btn-today" class="btn btn-outline-dark">Hôm nay</button>
+					<button id="btn-prev" class="btn text-dark"><img src="{{ ('frontend/images/left-arrow.png')}}" alt=""></button>
+					<button id="btn-next" class="btn text-dark"><img src="{{ ('frontend/images/right-arrow.png')}}" alt=""></button>
+					<p class="month-year-display" id="monthYear"></p>
+				</div>	
+				<div class="col-sm-4 text-end dropdown">
                     <a href="#" class="d-inline-flex align-items-center text-decoration-none text-dark" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         {{ Auth::user()->name }}
                         <img src="{{ asset('frontend/images/profile.png') }}" alt="Profile" class="rounded-circle ms-2 iconheader" style="width: 50px; height: 50px;">
@@ -36,7 +36,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+
+			</div>
         </div>
     </header>
     <section>
@@ -157,17 +158,13 @@
     // Hàm chọn ngày trong lịch tháng
     function selectDate(year, month, day) {
         selectedDate = new Date(year, month, day);
-
-        // Nếu tháng hoặc năm khác thì cập nhật currentDate để cập nhật lại lịch tháng
-        if (month !== currentDate.getMonth() || year !== currentDate.getFullYear()) {
-            currentDate = new Date(year, month, 1);
-        }
+        currentDate = new Date(year, month, day); // Cập nhật luôn currentDate về ngày vừa chọn
 
         // Cập nhật lại lịch tháng, tuần và tiêu đề
         taolich(currentDate.getMonth(), currentDate.getFullYear(), false);
-        renderWeekView(selectedDate); // Truyền selectedDate để render tuần dựa trên ngày được chọn
+        renderWeekView(currentDate); // render tuần dựa trên ngày vừa chọn
         updateWeekTitle();
-        renderEventsOnWeekView(allEvents); // Gọi lại để vẽ các sự kiện phù hợp với tuần mới
+        renderEventsOnWeekView(allEvents); // Vẽ sự kiện theo tuần mới
     }
 
     // Hàm tạo lịch tháng
@@ -544,13 +541,9 @@
                                     .then(res => {
                                         if (res.ok) {
                                             modal.hide();
-                                            location.reload(); // Tải lại trang để cập nhật allEvents
+                                            location.reload();
                                         } else {
-                                            res.json().then(data => {
-                                                alert(data.message || 'Xóa sự kiện thất bại!');
-                                            }).catch(() => {
-                                                alert('Xóa sự kiện thất bại!');
-                                            });
+                                            res.text().then(text => alert(text));
                                         }
                                     });
                                 }
